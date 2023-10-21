@@ -1,0 +1,293 @@
+/*SECCION HEADER*/
+#header{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--color-header);
+    z-index: 2;
+}
+
+/*Primera sección del header: Logo*/
+#header__logo {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    min-width: 6.5rem;
+}
+
+#header__logo img {
+    display: inline-block;
+    cursor: pointer;
+    max-height: 2.5rem;
+}
+
+/*Segunda seccion del header: Menu Central*/
+#header__menu-central {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: sticky;
+}
+
+    /*Lista que contiene el menu central*/
+#header__menu-central ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+    /*Item individual del menu central*/
+.header__menu-central__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.3rem 1.5rem;
+    border-radius: 15rem;
+    transition: opacity 0.2s;
+    border-radius: 15rem;
+    opacity: 0.8;
+}
+    /*Esto pone margenes solo en el item cental para evitar problemas con el hover*/
+.header__menu-central__item:nth-child(even){
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+    /*Imagenes de item*/
+.header__menu-central__item__icono{
+    height: 2rem;
+    margin-right: 0.4rem;
+    transition: 0.1s all;
+}
+
+    /*Links de items*/
+.header__menu-central__item__link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem 0.2rem;
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 0%;
+    color: var(--color-texto);
+    transition: 0.1s all;
+}
+    
+    /*Animaciones al hacer hover sobre los items del menu central*/
+#header__menu-central ul:hover > .header__menu-central__item {
+    opacity: 0.2;
+}
+
+
+#header__menu-central ul:hover > .header__menu-central__item:hover{
+    opacity: 1;
+    background: #333333;
+}
+
+/*Tercera seccion del header: Usuario*/
+
+    /*funciones de usuario*/
+#header__usuario {
+    display:flex;
+    position: relative;
+    right: 0;
+}
+
+#header__usuario__crear-cuenta{
+    padding: 0.5rem 1rem;
+    font-family: var(--font-titulo);
+    font-weight: bold;
+    background-color: var(--color-header);
+    color: var(--color-texto);
+    opacity: 0.5;
+    border-style: solid;
+    border-radius: 5rem;
+    border-color: rgb(200, 200, 200);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#header__usuario__crear-cuenta:hover{
+    opacity: 1;
+}
+
+#header__usuario__iniciar-sesion{
+    padding: 0.5rem 1rem;
+    font-family: var(--font-titulo);
+    font-weight: bold;
+    background-color: var(--color-header);
+    color: var(--color-texto);
+    border-style: solid;
+    border-radius: 5rem;
+    border-color: var(--color-texto);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#header__usuario__iniciar-sesion:hover{
+    border-color: var(--color-header);
+    color: var(--color-header);
+    background-color: white;
+}
+
+    /*icono de usuario*/
+.header__usuario__icono{
+    display: none;
+    width: 2rem;
+    margin-right: 1rem;
+    transition: .1s all;
+    cursor: pointer;
+}
+
+#header__usuario__icono__secundario{
+    display: none;
+    width: 0.8rem;
+    transition: .1s all;
+    margin-right: 0.4rem;
+    cursor: pointer;
+}
+
+.header__usuario__icono__secundario--activo{
+    -webkit-transform: scaleY(-1);  
+    transform: scaleY(-1);
+}
+    
+#header__usuario__menu {
+    border-radius: 0.5rem;
+    box-shadow: #333333;
+    position: absolute;
+    display: none;
+    top: 100%;
+    background-color: rgb(42, 42, 42);
+    width: 11.2rem;
+    right: 1rem;
+    padding: 0;
+    margin-top:0.6rem ;
+}
+
+.header__usuario__menu--abierto {
+    max-height: min-content!important;
+    display:block!important;
+}
+
+    /*quitar viñetas de la lista*/
+#header__usuario__menu ul {
+    list-style: none;
+    padding: 0rem 0.5rem;
+}
+
+    /*seleccion de funciones de usuario*/
+.header__usuario__menu__item {
+    width: 100%;
+    padding: 0.6rem 0rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.4s;
+}
+
+    /*seleccion de nombre de funciones de usuario*/
+.header__usuario__menu__item__link{
+    color: #fff;
+    font-family: var(--font-cuerpo);
+    font-size: 0.95rem;
+    text-decoration: none;
+    margin-left: 0.8rem;
+    margin-right: 0.313rem;
+    height: min-content;
+}
+
+#header__usuario:hover {
+    cursor: pointer;
+}
+
+.header__usuario__menu__item:hover {
+    background-color: rgb(71, 71, 71);   
+}
+
+#menu-inferior{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .header__menu-central__item{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__menu-central__item__icono{
+        height: 1.5rem;
+        margin-right: 0;
+    }
+    .header__menu-central__item__link{
+        font-size: 1rem;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+    #header{
+        height: 3rem;
+        background-color: var(--color-body);
+    }
+
+    #header__menu-central{
+        display: none;
+    }
+
+    #header__sin-iniciar{
+        font-size: 0.7rem;
+        display: flex;
+    }
+
+    #header__logo img{
+        height: 2rem;
+    }
+
+    #menu-inferior{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 3.4rem;
+        opacity: 1;
+        background-color: rgb(40, 40, 40);
+    }
+    
+    #menu-inferior ul{
+        list-style: none;
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .menu-inferior__item{
+        display: flex;
+        flex-direction: column;
+        opacity: 0.6;
+    }
+
+    .menu-inferior__item--activo{
+        opacity: 1;
+    }
+    
+    .menu-inferior__item__icono{
+        height: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .menu-inferior__item__link{
+        font-size: 0.8rem;
+        color: var(--color-texto);
+        text-decoration: none;
+        font-family: var(--font-cuerpo);
+
+    }
+}
+
+

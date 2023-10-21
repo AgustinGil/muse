@@ -1,0 +1,128 @@
+body {
+    height: 100vw;
+    height: 100vhW;
+    padding: 0;
+    margin: 0;
+    background: rgb(27, 27, 27);
+}
+
+#logo {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+#cont-form {
+    width: 500px;
+    height: 674.3;
+    background: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#cont-form__form {
+    display: flex;
+    width: 100%;
+    height: 544px;
+    flex-direction: column;
+}
+
+.cont-form__form__campos {
+    display: flex;
+}
+
+.cont-form__form__campos__nomb {
+    margin: 20px 40px;
+    display: flex;
+    width: 100%;
+    height: 54px;
+}
+
+.cont-form__form__datos {
+    width: 33.33%;
+    display: flex;
+}
+
+.cont-form__form__datosNA {
+    width: 50%;
+    display: flex;
+}
+
+.cont-form__form__datos__info {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.cont-form__form__datos__nomb {
+    font-size: 16px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -10px;
+    padding: 0 5px;
+    background: #1E1E1E;
+    color: #fff;
+}
+
+.cont-form__form__datos__info__ingr {
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    border: #fff 2px solid ;;
+}
+
+.cont-form__form__datos__info__ingr:focus {
+    border: 2px solid rgb(98, 21, 211);
+    outline: none;
+}
+
+#cont-form__form__cont-b {
+    display: flex;
+    width: 100%;
+    height: 54px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#cont-form__form__cont-b__boton {
+    width: 200px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+}
+
+#cont-form__form__cont__in-sesion {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#cont-form__form__cont__in-sesion p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/*rgb(98, 21, 211)*/
