@@ -98,14 +98,17 @@
     font-size: 1.125rem;
     font-weight: 500;
 }
-    
-    /*Animaciones al hacer hover sobre los items del menu central*/
-#header__menu-central ul:hover > .header__menu-central__item {
+
+.header__menu-central__item:hover{
+    color: var(--color-marca);
+    border-bottom: solid 0.2rem var(--color-texto);
 }
 
-
-#header__menu-central ul:hover > .header__menu-central__item:hover{
+.header__menu-central__item--activo:hover{
+    color: var(--color-marca);
+    border-bottom: solid 0.2rem var(--color-marca);
 }
+
 
 /*Tercera seccion del header: Usuario*/
 
@@ -114,6 +117,12 @@
     display:flex;
     position: relative;
     right: 0;
+    align-items: center;
+}
+
+#header__sin-iniciar{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
