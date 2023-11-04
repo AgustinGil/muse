@@ -51,20 +51,20 @@
 /*imagen de cancion*/
 .imagen{    
     position: relative;
-    min-width: 13rem;
-    min-height: 13rem;
+    min-width: 12rem;
+    min-height: 12rem;
     width: 9rem;
     height: 9rem;
     margin: 0rem;
-    border-radius: 4%;
+    border-radius: 2%;
     object-fit: cover;
     object-position: center;
 }
 
 .reproducir-sobre-imagen{
     position: absolute;
-    width: 4.5rem;
-    margin: 4.25rem;
+    width: 4rem;
+    margin: 4rem;
     opacity: 0;
     transition: opacity 0.05s;
     z-index: 1;
@@ -97,6 +97,7 @@
     font-size: 15px;
     font-weight: bold;
     display: block;
+    font-family: var(--font-cuerpo);
 }
 
 /*cantante*/
@@ -107,6 +108,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-family: var(--font-cuerpo);
 }
 
 @media only screen and (max-width: 768px) {
