@@ -1,7 +1,20 @@
+/*Enlace a la font Space Grotesk*/
+@font-face{
+    font-family: Inter;
+    src: url(/src/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/*Enlaces a la font Roboto y sus distintos pesos*/
+@font-face{
+    font-family: Roboto;
+    src: url(/src/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 400;
+}
+
 
 :root{
     --font-cuerpo: Roboto,Arial;
-    --font-titulo: Space Grotesk,Segoe UI;
+    --font-titulo: Inter,Segoe UI;
     
     --color-texto:hsl(0, 0%, 100%);
     --color-body: hsl(0, 0%, 10%);
