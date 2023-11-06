@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   height="800px"
+   width="800px"
+   version="1.1"
+   viewBox="0 0 512 512"
+   enable-background="new 0 0 512 512"
+   id="svg3"
+   sodipodi:docname="play-button-svgrepo-com.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.44547727"
+     inkscape:cx="359.16535"
+     inkscape:cy="402.93863"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <g
+     id="g3"
+     style="fill:#000000;fill-opacity:1"
+     transform="translate(1130.1924,236.77061)">
+    <g
+       fill="#231F20"
+       id="g2"
+       style="fill:#000000;fill-opacity:1">
+      <path
+         d="M 354.2,247.4 219.1,155 c -4.2,-3.1 -15.4,-3.1 -16.3,8.6 v 184.8 c 1,11.7 12.4,11.9 16.3,8.6 l 135.1,-92.4 c 3.5,-2.1 8.3,-10.7 0,-17.2 z M 223.7,328.7 V 183.3 L 329.8,256 Z"
+         id="path1"
+         style="fill:#000000;fill-opacity:1" />
+      <path
+         d="M 256,11 C 120.9,11 11,120.9 11,256 11,391.1 120.9,501 256,501 391.1,501 501,391.1 501,256 501,120.9 391.1,11 256,11 Z m 0,469.1 C 132.4,480.1 31.9,379.6 31.9,256 31.9,132.4 132.4,31.9 256,31.9 379.6,31.9 480.1,132.4 480.1,256 480.1,379.6 379.6,480.1 256,480.1 Z"
+         id="path2"
+         style="fill:#000000;fill-opacity:1" />
+    </g>
+  </g>
+  <path
+     id="path3"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:2.13192;stroke-opacity:0.308696"
+     d="M 255.4925 0 A 255.49207 255.49207 0 0 0 0 255.4925 A 255.49207 255.49207 0 0 0 255.4925 510.98375 A 255.49207 255.49207 0 0 0 510.98375 255.4925 A 255.49207 255.49207 0 0 0 255.4925 0 z M 207.6725 159.385 L 349.02625 256.47625 L 207.6725 352.615 L 207.6725 159.385 z " />
+</svg>

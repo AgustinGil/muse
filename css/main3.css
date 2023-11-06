@@ -46,7 +46,6 @@ main{
 
 .seccion-titular__info--img{
     display: flex;
-
     position: relative;
     justify-content:left;
 }

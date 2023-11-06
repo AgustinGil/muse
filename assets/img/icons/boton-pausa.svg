@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   height="800px"
+   width="800px"
+   version="1.1"
+   viewBox="0 0 512 512"
+   enable-background="new 0 0 512 512"
+   id="svg3"
+   sodipodi:docname="boton-pausa.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="305.92003,296.26369"
+       end_point="305.92003,324.92571"
+       center_point="305.92003,310.5947"
+       id="path-effect9"
+       is_visible="true"
+       lpeversion="1.2"
+       lpesatellites=""
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false"
+       link_styles="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="0,0"
+       end_point="228.789,300.46944"
+       center_point="114.3945,150.23472"
+       id="path-effect8"
+       is_visible="true"
+       lpeversion="1.2"
+       lpesatellites=""
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false"
+       link_styles="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="305.92003,296.26369"
+       end_point="305.92003,324.92571"
+       center_point="305.92003,310.5947"
+       id="path-effect9-4"
+       is_visible="true"
+       lpeversion="1.2"
+       lpesatellites=""
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false"
+       link_styles="false" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.22273864"
+     inkscape:cx="338.9623"
+     inkscape:cy="-334.47273"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <g
+     id="g3"
+     style="fill:#000000;fill-opacity:1"
+     transform="translate(1130.1924,236.77061)">
+    <g
+       fill="#231F20"
+       id="g2"
+       style="fill:#000000;fill-opacity:1">
+      <path
+         d="M 354.2,247.4 219.1,155 c -4.2,-3.1 -15.4,-3.1 -16.3,8.6 v 184.8 c 1,11.7 12.4,11.9 16.3,8.6 l 135.1,-92.4 c 3.5,-2.1 8.3,-10.7 0,-17.2 z M 223.7,328.7 V 183.3 L 329.8,256 Z"
+         id="path1"
+         style="fill:#000000;fill-opacity:1" />
+      <path
+         d="M 256,11 C 120.9,11 11,120.9 11,256 11,391.1 120.9,501 256,501 391.1,501 501,391.1 501,256 501,120.9 391.1,11 256,11 Z m 0,469.1 C 132.4,480.1 31.9,379.6 31.9,256 31.9,132.4 132.4,31.9 256,31.9 379.6,31.9 480.1,132.4 480.1,256 480.1,379.6 379.6,480.1 256,480.1 Z"
+         id="path2"
+         style="fill:#000000;fill-opacity:1" />
+    </g>
+  </g>
+  <path
+     id="path3"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:2.13192;stroke-opacity:0.308696"
+     d="M 256.92875 0 C 115.82432 -0.00023748273 1.4360125 114.38807 1.43625 255.4925 C 1.4367029 396.59644 115.82481 510.98399 256.92875 510.98375 C 398.0322 510.9833 512.41955 396.59595 512.42 255.4925 C 512.42024 114.38856 398.03269 0.00045287191 256.92875 0 z M 193.775 124.48625 C 208.15552 124.52027 222.58446 127.15707 222.6175 132.27125 L 222.6175 256 L 222.6175 379.72875 C 222.55142 389.9571 164.90119 390.27577 165.22375 379.68375 L 165.22375 256 L 165.22375 132.31625 C 165.06247 127.02024 179.39448 124.45223 193.775 124.48625 z M 317.935 124.48625 C 332.31551 124.52027 346.74446 127.15708 346.7775 132.27125 L 346.7775 256 L 346.7775 379.72875 C 346.71142 389.95709 289.06119 390.27576 289.38375 379.68375 L 289.38375 256 L 289.38375 132.31625 C 289.22247 127.02025 303.55449 124.45223 317.935 124.48625 z " />
+  <g
+     id="g9"
+     transform="translate(-63.516671)" />
+</svg>
