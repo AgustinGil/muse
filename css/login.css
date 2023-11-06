@@ -80,16 +80,28 @@ main {
 }
 
 .autenticacion__form__error{
+    display: inline-block;
     color: #EE3B2B;
     margin-top: -0.5rem;
     font-family: var(--font-cuerpo);
-    margin-bottom: 0rem;
+    width: 100%;
+}
+
+.div__autenticacion__form__error {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 0;
 }
 
 .autenticacion__form__titulo{
     margin-bottom: 0rem;
     font-family: var(--font-cuerpo);
     font-weight: bold;
+}
+
+#miPnomb {
+margin-right: 1rem;
 }
 
 .autenticacion__form__campo__entrada {
