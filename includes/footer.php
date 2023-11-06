@@ -16,7 +16,7 @@
 
     <footer>
         <div id="footer__logo"><img src="assets/img/icons/imagotipo.svg"></div>
-        <p id="derechos-footer">Copyright ©2023 Muse. <br>Developed by Fermin S. , Gil A. , Jiménez G. </p>
+        <p id="derechos-footer">Copyright © 2023 Muse. <br>Developed by Fermin S. , Gil A. , Jiménez G. </p>
         <div id="footer__iconos">
             <img class="icono-footer filtro-blanco" src="assets/img/icons/instagram.svg">
             <img class="icono-footer filtro-blanco" src="assets/img/icons/twitter.svg">

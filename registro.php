@@ -84,7 +84,7 @@
             </form>
 
             <div class="autenticacion__redirecciones autenticacion__registro">
-                <p>¿Ya tienes cuenta? <a href="login.php">Inicia sesion aqui</a></p>
+                <p>¿Ya tienes cuenta? <a href="login.php">Inicia sesión aquí</a></p>
             </div>
         </div>
     </main>
