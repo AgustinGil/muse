@@ -93,7 +93,7 @@
             
 
             <div class="autenticacion__redirecciones autenticacion__registro">
-                <p>¿No tienes una cuenta? <a href="registro.php">Registrate</a></p>
+                <p>¿No tienes una cuenta? <a href="registro.php">Regístrate</a></p>
             </div>
         </div>
     </main>

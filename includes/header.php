@@ -61,7 +61,7 @@
                     <li class="header__usuario__menu__item"><a class="header__usuario__menu__item__link"
                             href="#">Ajustes</a></li>
                     <li class="header__usuario__menu__item"><a href="config/cerrarsesion.php"
-                            class="header__usuario__menu__item__link">Cerrar Sesion</a></li>
+                            class="header__usuario__menu__item__link">Cerrar Sesión</a></li>
                 </ul>
             </nav>
     
@@ -71,7 +71,7 @@
                         ?>
         <div id="header__sin-iniciar">
             <a href="registro.php"><button id="header__usuario__crear-cuenta">Crear Cuenta</button></a>
-            <a href="login.php"><button id="header__usuario__iniciar-sesion">Iniciar Sesion</button></a>
+            <a href="login.php"><button id="header__usuario__iniciar-sesion">Iniciar Sesión</button></a>
         </div>
         <?php
                     }

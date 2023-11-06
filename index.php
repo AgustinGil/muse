@@ -28,7 +28,7 @@
 
         <main>
         <section class="splide seccion-titular" aria-label="Splide Basic HTML Example">
-                <h2>Recomendado para tí</h2>
+                <h2>Recomendado para ti</h2>
                 <div class="splide__track seccion-titular__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
@@ -346,7 +346,7 @@
             <div id='imagen-lista'>
                 <img src="assets/img/covers/cover 1.jpg">
 
-                <p>Lista de reproduccion</p>
+                <p>Lista de reproducción</p>
             </div>
     </section>
 
