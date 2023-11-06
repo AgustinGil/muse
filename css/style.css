@@ -1,11 +1,30 @@
+/*Enlace a la font Space Grotesk*/
+@font-face{
+    font-family: Inter;
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/*Enlaces a la font Roboto y sus distintos pesos*/
+@font-face{
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
 
 :root{
     --font-cuerpo: Roboto,Arial;
-    --font-titulo: Space Grotesk,Segoe UI;
+    --font-titulo: Inter,Segoe UI;
     
     --color-texto:hsl(0, 0%, 100%);
-    --color-body: hsl(0, 0%, 10%);
-    --color-header: hsl(0, 0%, 10%);
+    --color-body: #19171E;
+    --color-header: #252329;
     --color-barra-inferior: hsl(0, 0%, 0%);
     --color-contenedor-cancion: hsl(0, 0%, 12%);
     --color-marca: #6e30e8ff;
@@ -40,20 +59,21 @@ select:required:invalid{
 
 .barra-inferior {
     width: 100%;
-    height: 3.5rem;
+    height: 5rem;
     position: fixed;
     margin-top: 2.5rem;
     bottom: 0;
-    background: #000000;
+    background: hsl(240, 9%, 10%);
     display: flex;
     z-index: 3;
+    left: 0;
     align-items: center;
 }
 
 .contenedor-imagen-actual {
     display: inline-block;
-    min-width: 2rem;
-    height: 2rem;
+    min-width: 4rem;
+    height: 4rem;
     text-align: center;
     margin-left: .8rem;
 }
@@ -65,10 +85,9 @@ select:required:invalid{
 
 .texto-actual {
     color: #fff;
-    margin-left: 2rem;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
-    margin-top: .8rem;
 }
 
 #cancion-actual {
@@ -77,12 +96,15 @@ select:required:invalid{
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
 }
 
 #artista-actual {
     margin-top: -0.01rem;
-    font-size: 12px;
+    font-size: 0.7rem;
     overflow: hidden;
+    margin-bottom: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: 'Space Grotesk', sans-serif;
@@ -90,6 +112,7 @@ select:required:invalid{
 
 .zona-reproductor {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -99,59 +122,7 @@ select:required:invalid{
 #reproductor-de-audio {
     height: 90%;
     width: 100%;
-    padding: 0 20px;
-    
-}
-
-audio::-webkit-media-controls-enclosure {
-    border-radius: 0;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-
-audio::-webkit-media-controls-play-button {
-    filter: invert(100%);
-    width: 7rem;
-}
-
-/*
-audio::-webkit-media-controls-timeline-container{
-    
-}
-*/
-
-audio::-webkit-media-controls-current-time-display {
-    display: block;
-    color: #fff;
-    text-shadow: none;
-}
-
-audio::-webkit-media-controls-time-remaining-display {
-    display: block;
-    color: #fff;
-    text-shadow: none;
-}
-
-audio::-webkit-media-controls-timeline {
-    display: block;
-    filter: invert(100%);
-    display: inline-block;
-    max-width: 30rem;
-}
-
-audio::-webkit-media-controls-volume-slider-container {
-    filter: invert(100%);
-    display: block;
-}
-
-audio::-webkit-media-controls-volume-slider {
-    filter: invert(100%);
-    margin-left: 0;
-}
-
-audio::-webkit-media-controls-mute-button {
-    margin-left: 0;
-    filter: invert(100%);
+    padding: 0 0px;
 }
 
 #lista-reproduciendo__imagenes{
@@ -161,7 +132,7 @@ audio::-webkit-media-controls-mute-button {
 }
 
 .lista-reproduciendo__imagenes__item{
-    width: 2.1rem;
+    width: 1.8rem;
 }
 
 .lista-reproduciendo__imagenes__item:nth-child(1){
@@ -204,17 +175,166 @@ audio::-webkit-media-controls-mute-button {
     font-family: var(--font-cuerpo);
 }
 
+.controls{
+    margin-top:0.5rem ;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.player-button{
+    height: 2rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.player-button-play{
+    height: 2rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.player-button img{
+    height: 2rem;
+    cursor: pointer;
+}
+
+.player-button-play img{
+    height: 2rem;
+    cursor: pointer;
+}
+
+.timeline {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 60%;
+    height: .3em;
+    background-color: #848484;
+    border-radius: 0.2rem;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: linear-gradient(#6e30e8ff, #6e30e8ff);
+}
+
+#timeline__container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#timeline__container p{
+    font-size: 0.8rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.timeline::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .1s;
+    background-color: #ffffff;
+}
+
+.timeline::-webkit-slider-thumb:hover {
+    background-color: #ffffff;
+}
+
+.timeline:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+.timeline::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+#volumen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-sonido{
+    margin-left: 0;
+}
+
+.speaker{
+    padding-right: 0;
+}
+
+#imagen-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+
+    margin-left: 2rem;
+}
+
+
+#imagen-lista p{
+    display: flex;
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: max-content;
+}
+
+#imagen-lista img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.2rem;
+    margin-right: 0.5rem;
+}
+
 
 @media screen and (max-width: 768px){
     
+    .controls{
+        justify-content: right;
+        margin-right: 1rem;
+        align-items: center;
+    }
 
+    .contenedor-imagen-actual {
+        display: inline-block;
+        min-width: 2rem;
+        height: 2rem;
+        text-align: center;
+        margin-left: .8rem;
+    }
 
+    #imagen-lista{
+        display: none;
+    }
+    
+    #volumen{
+        display: none;
+    }
+
+    .player-button{
+        display: none;
+    }
+
+    #timeline__container{
+        display: none;
+    }
     .barra-inferior {
         bottom: 3.8rem;
         opacity: 0.9;
         width: 95%;
         left: 50%;
         translate:-50% 0%;
+        height: 3.5rem;
     }
 
     .zona-reproductor {

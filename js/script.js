@@ -21,3 +21,39 @@ function barraCorrecta(nombre){
         campoError.classList.toggle('autenticacion__form__campo__entrada--error')
     }
 }
+
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splideLista = document.getElementsByClassName( 'splide' );
+
+    for ( var i = 0; i < splideLista.length; i++ ) {
+        new Splide( splideLista[ i ],{
+            type:'slide',
+            perPage: 5,
+            perMove:1,
+            wheel:true,
+            gap: '5rem',
+            pagination:false,
+    
+            breakpoints:{
+                1200:{
+                    perPage:4,
+                },
+    
+                950:{
+                    perPage:3,
+                },
+    
+                640:{
+                    perPage:2,
+                },
+
+                300:{
+                    perPage:1,
+                }
+            }
+        } ).mount();
+    }
+})
+
+
+

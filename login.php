@@ -96,6 +96,8 @@
                 <p>¿No tienes una cuenta? <a href="registro.php">Registrate</a></p>
             </div>
         </div>
+
+        
     </main>
 
     <!-- Footer de la Pagina -->
