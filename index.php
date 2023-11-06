@@ -8,14 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/main3.css">
-        <link rel="stylesheet" type="text/css" href="css/header.css">
-        <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/main1.css">
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
         <script src="js/splide-4.1.3/dist/js/splide.min.js"></script>
         <link rel="stylesheet" href="js/splide-4.1.3/dist/css/splide.min.css">
         <script src="js/script.js"></script>
         
+
+        <script src="js/script.js"></script>
         
         <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
         <link rel="icon" href="assets/img/icons/favicon.ico">
@@ -23,65 +23,11 @@
     </head>
 
     <body>
-        <header id="header">
-            
-            <div id="header__logo">
-                <a href="index.php"><img src="assets/img/icons/imagotipo-blanco.svg" title="Muse"></a>
-            </div>
-            <div id="header__logo-secundario">
-                <a href="index.php"><img src="assets/img/icons/isotipo-blanco.svg" title="Muse"></a>
-            </div>
-           
-            
 
-            <nav id="header__menu-central">
-                <ul>
-                    <li class="header__menu-central__item header__menu-central__item--activo">
-                        <a href="" class="header__menu-central__item__link">Inicio</a>
-                    </li>
-                    <li class="header__menu-central__item">
-                        <a href="" class="header__menu-central__item__link">Biblioteca</a>
-                    </li>
-                    <li class="header__menu-central__item">
-                        <a href="" class="header__menu-central__item__link">Buscar</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <?php
-                session_start();
-                
-                if (isset($_SESSION['usuario'])) {
-                    // El usuario ha iniciado sesión, muestra el nombre de usuario u otra información
-                    $nombreUsuario = $_SESSION['usuario'];
-                    ?>
-                    <div id="header__usuario" onclick="desplegarMenuUsuario()">
-                    
-                        <img id="header__usuario__icono__secundario" class="filtro-blanco" src="assets/img/icons/drop_down_menu.svg">
-                        <?php echo '<p id="nombre_us">'.$nombreUsuario.'</p>' ?>
-                        <img class="header__usuario__icono filtro-blanco" src="assets/img/icons/circle-user.svg">
-
-                        <nav id="header__usuario__menu">
-                            <ul>
-                                <li class="header__usuario__menu__item"><a class="header__usuario__menu__item__link" href="#">Perfil</a></li>
-                                <li class="header__usuario__menu__item"><a class="header__usuario__menu__item__link" href="#">Ajustes</a></li>
-                                <li class="header__usuario__menu__item"><a href="cerrarsesion.php" class="header__usuario__menu__item__link">Cerrar Sesion</a></li>
-                            </ul>
-                        </nav>
-
-                    </div>
-                    <?php
-                } else {
-                    ?>
-                    <?php
-                }
-            ?>
-
-            
-        </header>
+        <?php include('includes/header.php') ?>
 
         <main>
-            <section class="splide seccion-titular" aria-label="Splide Basic HTML Example">
+        <section class="splide seccion-titular" aria-label="Splide Basic HTML Example">
                 <h2>Recomendado para tí</h2>
                 <div class="splide__track seccion-titular__track">
                         <ul class="splide__list">
@@ -345,43 +291,14 @@
                         </ul>
                 </div>
             </section>
-            <hr id="barra-footer">
-
-            <footer>
-                    <div id="footer__logo"><img src="assets/img/icons/imagotipo.svg"></div>
-                    <p id="derechos-footer">Copyright ©2023 Muse. <br>Developed by Fermin S. , Gil A. , Jiménez G. </p>
-                    <div id="footer__iconos">
-                        <img class="icono-footer filtro-blanco" src="assets/img/icons/instagram.svg">
-                        <img class="icono-footer filtro-blanco" src="assets/img/icons/twitter.svg">
-                        <img class="icono-footer filtro-blanco" src="assets/img/icons/facebook-f.svg">
-                    </div>
-            </footer>
+            <!-- Footer de la Pagina -->
+        <?php include('includes/footer.php') ?>
         </main>
 
         
-        <section id="menu-inferior">
-            <ul>
-                <li class="menu-inferior__item">
-                    <img class="menu-inferior__item__icono filtro-blanco" src="assets/img/icons/book-bookmark.svg">
-                    <a href="" class="menu-inferior__item__link">Biblioteca</a>
-                </li>
-                <li class="menu-inferior__item menu-inferior__item--activo">
-                    <img class="menu-inferior__item__icono filtro-blanco" src="assets/img/icons/house-solid.svg">
-                    <a href="" class="menu-inferior__item__link">Inicio</a>
-                </li>
-                <li class="menu-inferior__item">
-                    <img class="menu-inferior__item__icono filtro-blanco" src="assets/img/icons/magnifying-glass-solid.svg">
-                    <a href="" class="menu-inferior__item__link">Buscar</a>
-                </li>
-                <li class="menu-inferior__item">
-                    <img class="menu-inferior__item__icono filtro-blanco" src="assets/img/icons/Lyre Icon.svg">
-                    <a href="" class="menu-inferior__item__link">Premium</a>
-                </li>
-            </ul>
-        </section>
 
         <section class="barra-inferior">
-            <div class="contenedor-imagen-actual">
+        <div class="contenedor-imagen-actual">
                 <img id="imagen-actual" src="assets/img/covers/cover 1.jpg">
             </div>
         

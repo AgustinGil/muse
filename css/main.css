@@ -1,8 +1,21 @@
+#main__central{
+    width: 100vw;
+    background: rgba(37, 35, 41,0.5);
+    backdrop-filter: blur(1000px);
+}
+
+main{
+    background-color: var(--color-header);
+}
 .seccion-titular {
-    margin: 0rem 0 0.5rem 6rem;
+    margin: 0rem 0 0.5rem 3rem;
     color: #fff;
     overflow: hidden;
     flex-wrap: wrap;
+}
+
+.seccion-titular__track ul{
+    list-style: none;
 }
 
 /*titulos de categorias*/
@@ -10,7 +23,7 @@
     font-size: 24px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
@@ -25,47 +38,40 @@
 /*informacion de cancion*/
 .seccion-titular__info--music {
     display: flex;
-    width: 11rem;
-    height: 15rem;
-    background-color: rgb(35, 35, 35);
     flex-direction: column;
     border-radius: 4%;
     margin-top: 1rem;
-    margin-right: 2rem;
 }
 
 .seccion-titular__info--img{
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content:left;
 }
 
 /*imagen de cancion*/
 .imagen{    
     position: relative;
-    min-width: 9rem;
-    min-height: 9rem;
+    min-width: 12rem;
+    min-height: 12rem;
     width: 9rem;
     height: 9rem;
-    margin: 1rem;
-    margin-bottom: 0rem;
-    border-radius: 4%;
+    margin: 0rem;
+    border-radius: 2%;
     object-fit: cover;
     object-position: center;
-    
 }
 
 .reproducir-sobre-imagen{
     position: absolute;
     width: 4rem;
-    margin: 3.5rem;
+    margin: 4rem;
     opacity: 0;
     transition: opacity 0.05s;
     z-index: 1;
 }
 
 .seccion-titular__info--music:hover{
-    background-color: rgb(38, 38, 38);
     cursor: pointer;
 
     .imagen{
@@ -77,13 +83,9 @@
     }
 }
 
-
-
 /*texto de cancion: titulo y cantante*/
 .seccion-titular__info--text {
     margin-top: 0.625rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     color: #fff;
     overflow: hidden;
     white-space: nowrap;
@@ -95,14 +97,19 @@
 .seccion-titular__info--text .seccion-titular__info--titulo {
     font-size: 15px;
     font-weight: bold;
+    display: block;
+    font-family: var(--font-cuerpo);
 }
 
 /*cantante*/
 .seccion-titular__info--text .seccion-titular__info--artista {
     font-size: 14px;
     margin-top: 0.3rem;
+    margin-bottom: 0rem;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
+    font-family: var(--font-cuerpo);
 }
 
 @media only screen and (max-width: 768px) {
