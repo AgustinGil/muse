@@ -45,8 +45,15 @@ document.addEventListener( 'DOMContentLoaded', function() {
     
                 640:{
                     perPage:2,
+                },
+
+                300:{
+                    perPage:1,
                 }
             }
         } ).mount();
     }
 })
+
+
+

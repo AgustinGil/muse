@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="js/splide-4.1.3/dist/css/splide.min.css">
         <script src="js/script.js"></script>
         
+        
         <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
         <link rel="icon" href="assets/img/icons/favicon.ico">
         <title>Muse</title>
@@ -72,10 +73,6 @@
                     <?php
                 } else {
                     ?>
-                    <div id="header__sin-iniciar">
-                        <a href="registro.php"><button id="header__usuario__crear-cuenta">Registrarse</button></a>
-                        <a href="login.php"><button id="header__usuario__iniciar-sesion">Iniciar Sesion</button></a>
-                    </div>
                     <?php
                 }
             ?>
@@ -382,6 +379,7 @@
                 </li>
             </ul>
         </section>
+
         <section class="barra-inferior">
             <div class="contenedor-imagen-actual">
                 <img id="imagen-actual" src="assets/img/covers/cover 1.jpg">
@@ -391,21 +389,50 @@
                 <a id="cancion-actual">The Wanderer</a>
                 <p id="artista-actual">Dion</p>
             </div>
-        
+            
+            
             <div class="zona-reproductor">
-                <audio id="reproductor-de-audio" src="src\Dion - The Wanderer.mp3" controls controlsList="nodownload noplaybackrate"></audio>
+                <div id="timeline__container">
+                    <p id="tiempo-actual">0:00</p>
+                    <input type="range" id="barra-cancion" class="timeline" max="100" value="0" oninput="cambiarBarra()">
+                    <p id="tiempo-total">0:00</p>
+                </div>
+                
+                <div class="controls">
+                    <button class="player-button">
+                        <img src="/assets/img/icons/boton-shuffle.svg">
+                    </button>
+                    <button class="player-button"
+                    style="-webkit-transform: scaleY(-1);  
+                    transform: scaleX(-1);">
+                        <img src="/assets/img/icons/boton-next.svg">
+                    </button>
+                    <button class="player-button-play" onclick="toggleAudio()">
+                        <img id="play" src="/assets/img/icons/boton-play.svg">
+                    </button>
+                    <button class="player-button">
+                        <img src="/assets/img/icons/boton-next.svg">
+                    </button>
+                    <button class="player-button" onclick="repetirAudio()">
+                        <img id="repeat" src="/assets/img/icons/boton-repeat.svg">
+                    </button>
+                </div>
+                <audio src="/assets/audio/Dion - The Wanderer.mp3" id="reproductor-de-audio"></audio>
+            </div>
+            <div id="volumen">
+                <button class="player-button speaker">
+                    <img id="speaker-img" src="/assets/img/icons/Speaker_Icon-on.svg">
+                </button>
+                <input type="range" id="barra-sonido" class="timeline" max="100" value="100" oninput="cambiarBarraSonido()">
             </div>
 
-            <div id="lista-reproduciendo__imagenes">
-                <img class="lista-reproduciendo__imagenes__item" src="assets/img/covers/cover 13.jpg">
-                <img class="lista-reproduciendo__imagenes__item" src="assets/img/covers/cover 10.jpg">
-                <img class="lista-reproduciendo__imagenes__item" src="assets/img/covers/cover 11.jpg">
-                <img class="lista-reproduciendo__imagenes__item" src="assets/img/covers/cover 12.jpg">
+            <div id='imagen-lista'>
+                <img src="assets/img/covers/cover 1.jpg">
+
+                <p>Lista de reproduccion</p>
             </div>
-            <div id="lista-reproduciendo__texto">
-                <p id="lista-reproduciendo__texto__titulo">My Playlist</p>
-                <p id="lista-reproduciendo__texto__canciones">Versos Perversos,T.N.T,Sanctified with Dynamite</p>
-            </div>
-        </section>
+    </section>
+
+    <script src="js/scriptMusica.js"></script>
     </body>
 </html>
