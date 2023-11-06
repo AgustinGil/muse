@@ -31,10 +31,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <script src="js/script.js"></script>
 
     <link rel="shortcut icon" href="assets/img/icons/favicon.ico"/>
@@ -97,20 +96,10 @@
                 <p>¿No tienes una cuenta? <a href="registro.php">Registrate</a></p>
             </div>
         </div>
-
-        
     </main>
-    <hr id="barra-footer">
 
-    <footer>
-            <div id="footer__logo"><img src="assets/img/icons/imagotipo.svg"></div>
-            <p id="derechos-footer">Copyright ©2023 Muse. <br>Developed by Fermin S. , Gil A. , Jiménez G. </p>
-            <div id="footer__iconos">
-                <img class="icono-footer filtro-blanco" src="assets/img/icons/instagram.svg">
-                <img class="icono-footer filtro-blanco" src="assets/img/icons/twitter.svg">
-                <img class="icono-footer filtro-blanco" src="assets/img/icons/facebook-f.svg">
-            </div>
-    </footer>
+    <!-- Footer de la Pagina -->
+    <?php include('includes/footer.php') ?>
 </body>
 
 </html>
