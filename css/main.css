@@ -6,7 +6,6 @@
 
 main{
     background-color: var(--color-header);
-    box-shadow: 0 0 5px 5px rgba(25, 23, 30, 0.5) inset;
 }
 .seccion-titular {
     margin: 0rem 0 0.5rem 3rem;

@@ -9,7 +9,7 @@
         
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/main1.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
         <script src="js/splide-4.1.3/dist/js/splide.min.js"></script>
         <link rel="stylesheet" href="js/splide-4.1.3/dist/css/splide.min.css">
         <script src="js/script.js"></script>
